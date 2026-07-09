@@ -1,0 +1,126 @@
+[
+  {
+    "story": "ancient_greece",
+    "title": "In Ancient Greece the midday is hot",
+    "profile": "realism",
+    "scene_id": "02_ploutos_arrives",
+    "main_character": "ploutos",
+    "variant": 0,
+    "seed": 100,
+    "checkpoint": "realismIllustriousBy_v50FP16.safetensors",
+    "loras": [
+      {
+        "file": "cinematic_photography_detailed_illu_xl_v5.safetensors",
+        "strength": 0.8
+      }
+    ],
+    "params": {
+      "steps": 25,
+      "cfg": 7.0,
+      "sampler": "euler",
+      "scheduler": "normal",
+      "width": 1216,
+      "height": 832
+    },
+    "ipadapter_weight": 0.85,
+    "ipadapter_model": "ip-adapter-plus_sdxl_vit-h.safetensors",
+    "reference_image": "G:\\AI\\_MY_PROGRAMMING_2\\COMFYUI-STORY-ILLUSTRATOR\\characters\\ancient_greece\\ploutos.png",
+    "prompt": "cinematic photo, photorealistic, hyperrealistic, 8K cinematic photography, masterpiece, best quality, plump wealthy ancient Greek man, 45 years old, round cheerful face, rosy cheeks, double chin, balding with laurel wreath, amused twinkling eyes, pristine white wool cloak, gold fibula brooch, ancient Greek olive grove. A plump wealthy Greek man, round cheerful face, rosy cheeks, double chin, balding with laurel wreath, amused twinkling eyes, pristine white wool cloak, gold fibula brooch, arrives at a wooden table, followed by a slave carrying clay amphorae. A muscular Spartan warrior with bronze helmet, red cloak, looks up with interest. A skinny bald Athenian philosopher in faded beige cloak already reaching for wine jug. Dusty path visible behind, warm afternoon light, detailed skin texture, dramatic natural lighting, sharp focus, professional photography",
+    "negative": "illustration, cartoon, anime, painting, drawing, 3D render, plastic skin, blurry, low quality, watermark, text, ugly, deformed, bad anatomy, extra limbs, fused fingers, disfigured, b&w, nsfw, nude, naked, NOT a portrait, NOT close-up, NOT face-focused",
+    "timestamp": "2026-07-09T20:20:12",
+    "runner_version": "2.0.0"
+  },
+  {
+    "story": "ancient_greece",
+    "title": "In Ancient Greece the midday is hot",
+    "profile": "realism",
+    "scene_id": "02_ploutos_arrives",
+    "main_character": "ploutos",
+    "variant": 1,
+    "seed": 101,
+    "checkpoint": "realismIllustriousBy_v50FP16.safetensors",
+    "loras": [
+      {
+        "file": "cinematic_photography_detailed_illu_xl_v5.safetensors",
+        "strength": 0.8
+      }
+    ],
+    "params": {
+      "steps": 25,
+      "cfg": 7.0,
+      "sampler": "euler",
+      "scheduler": "normal",
+      "width": 1216,
+      "height": 832
+    },
+    "ipadapter_weight": 0.85,
+    "ipadapter_model": "ip-adapter-plus_sdxl_vit-h.safetensors",
+    "reference_image": "G:\\AI\\_MY_PROGRAMMING_2\\COMFYUI-STORY-ILLUSTRATOR\\characters\\ancient_greece\\ploutos.png",
+    "prompt": "cinematic photo, photorealistic, hyperrealistic, 8K cinematic photography, masterpiece, best quality, plump wealthy ancient Greek man, 45 years old, round cheerful face, rosy cheeks, double chin, balding with laurel wreath, amused twinkling eyes, pristine white wool cloak, gold fibula brooch, ancient Greek olive grove. A plump wealthy Greek man, round cheerful face, rosy cheeks, double chin, balding with laurel wreath, amused twinkling eyes, pristine white wool cloak, gold fibula brooch, arrives at a wooden table, followed by a slave carrying clay amphorae. A muscular Spartan warrior with bronze helmet, red cloak, looks up with interest. A skinny bald Athenian philosopher in faded beige cloak already reaching for wine jug. Dusty path visible behind, warm afternoon light, detailed skin texture, dramatic natural lighting, sharp focus, professional photography",
+    "negative": "illustration, cartoon, anime, painting, drawing, 3D render, plastic skin, blurry, low quality, watermark, text, ugly, deformed, bad anatomy, extra limbs, fused fingers, disfigured, b&w, nsfw, nude, naked, NOT a portrait, NOT close-up, NOT face-focused",
+    "timestamp": "2026-07-09T20:20:30",
+    "runner_version": "2.0.0"
+  },
+  {
+    "story": "ancient_greece",
+    "title": "In Ancient Greece the midday is hot",
+    "profile": "realism",
+    "scene_id": "02_ploutos_arrives",
+    "main_character": "ploutos",
+    "variant": 2,
+    "seed": 102,
+    "checkpoint": "realismIllustriousBy_v50FP16.safetensors",
+    "loras": [
+      {
+        "file": "cinematic_photography_detailed_illu_xl_v5.safetensors",
+        "strength": 0.8
+      }
+    ],
+    "params": {
+      "steps": 25,
+      "cfg": 7.0,
+      "sampler": "euler",
+      "scheduler": "normal",
+      "width": 1216,
+      "height": 832
+    },
+    "ipadapter_weight": 0.85,
+    "ipadapter_model": "ip-adapter-plus_sdxl_vit-h.safetensors",
+    "reference_image": "G:\\AI\\_MY_PROGRAMMING_2\\COMFYUI-STORY-ILLUSTRATOR\\characters\\ancient_greece\\ploutos.png",
+    "prompt": "cinematic photo, photorealistic, hyperrealistic, 8K cinematic photography, masterpiece, best quality, plump wealthy ancient Greek man, 45 years old, round cheerful face, rosy cheeks, double chin, balding with laurel wreath, amused twinkling eyes, pristine white wool cloak, gold fibula brooch, ancient Greek olive grove. A plump wealthy Greek man, round cheerful face, rosy cheeks, double chin, balding with laurel wreath, amused twinkling eyes, pristine white wool cloak, gold fibula brooch, arrives at a wooden table, followed by a slave carrying clay amphorae. A muscular Spartan warrior with bronze helmet, red cloak, looks up with interest. A skinny bald Athenian philosopher in faded beige cloak already reaching for wine jug. Dusty path visible behind, warm afternoon light, detailed skin texture, dramatic natural lighting, sharp focus, professional photography",
+    "negative": "illustration, cartoon, anime, painting, drawing, 3D render, plastic skin, blurry, low quality, watermark, text, ugly, deformed, bad anatomy, extra limbs, fused fingers, disfigured, b&w, nsfw, nude, naked, NOT a portrait, NOT close-up, NOT face-focused",
+    "timestamp": "2026-07-09T20:20:48",
+    "runner_version": "2.0.0"
+  },
+  {
+    "story": "ancient_greece",
+    "title": "In Ancient Greece the midday is hot",
+    "profile": "realism",
+    "scene_id": "02_ploutos_arrives",
+    "main_character": "ploutos",
+    "variant": 3,
+    "seed": 103,
+    "checkpoint": "realismIllustriousBy_v50FP16.safetensors",
+    "loras": [
+      {
+        "file": "cinematic_photography_detailed_illu_xl_v5.safetensors",
+        "strength": 0.8
+      }
+    ],
+    "params": {
+      "steps": 25,
+      "cfg": 7.0,
+      "sampler": "euler",
+      "scheduler": "normal",
+      "width": 1216,
+      "height": 832
+    },
+    "ipadapter_weight": 0.85,
+    "ipadapter_model": "ip-adapter-plus_sdxl_vit-h.safetensors",
+    "reference_image": "G:\\AI\\_MY_PROGRAMMING_2\\COMFYUI-STORY-ILLUSTRATOR\\characters\\ancient_greece\\ploutos.png",
+    "prompt": "cinematic photo, photorealistic, hyperrealistic, 8K cinematic photography, masterpiece, best quality, plump wealthy ancient Greek man, 45 years old, round cheerful face, rosy cheeks, double chin, balding with laurel wreath, amused twinkling eyes, pristine white wool cloak, gold fibula brooch, ancient Greek olive grove. A plump wealthy Greek man, round cheerful face, rosy cheeks, double chin, balding with laurel wreath, amused twinkling eyes, pristine white wool cloak, gold fibula brooch, arrives at a wooden table, followed by a slave carrying clay amphorae. A muscular Spartan warrior with bronze helmet, red cloak, looks up with interest. A skinny bald Athenian philosopher in faded beige cloak already reaching for wine jug. Dusty path visible behind, warm afternoon light, detailed skin texture, dramatic natural lighting, sharp focus, professional photography",
+    "negative": "illustration, cartoon, anime, painting, drawing, 3D render, plastic skin, blurry, low quality, watermark, text, ugly, deformed, bad anatomy, extra limbs, fused fingers, disfigured, b&w, nsfw, nude, naked, NOT a portrait, NOT close-up, NOT face-focused",
+    "timestamp": "2026-07-09T20:21:07",
+    "runner_version": "2.0.0"
+  }
+]

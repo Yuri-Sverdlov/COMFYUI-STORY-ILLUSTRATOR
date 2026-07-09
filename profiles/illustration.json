@@ -1,0 +1,23 @@
+{
+  "name": "illustration",
+  "checkpoint": "dreamshaper_xl_lightning.safetensors",
+  "loras": [],
+  "params": {
+    "steps": 6,
+    "cfg": 2.0,
+    "sampler": "dpmpp_sde",
+    "scheduler": "karras",
+    "width": 1216,
+    "height": 832
+  },
+  "prompt_template": {
+    "prefix": "digital painting, detailed storybook illustration, epic fantasy art, rich colors, expressive composition",
+    "suffix": "artistic brushwork, warm color palette, dramatic lighting, painterly style",
+    "negative": "photograph, photorealistic, 3D render, plastic skin, cartoon, anime, watermark, text, ugly, deformed, bad anatomy, blurry, low quality, nsfw, nude, naked"
+  },
+  "ipadapter": {
+    "enabled": true,
+    "model": "ip-adapter-plus_sdxl_vit-h.safetensors",
+    "weight": 0.7
+  }
+}

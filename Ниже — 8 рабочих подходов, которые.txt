@@ -1,0 +1,34 @@
+Ниже — 8 рабочих подходов, которые я нашёл в YouTube и статьях для **сохранения одного и того же персонажа** в ComfyUI: лица, одежды и общего вида. Для каждого подхода я даю источник и коротко объясняю, чем он полезен. [youtube](https://www.youtube.com/watch?v=Z3UxYPp7le4)
+
+## 1) IP-Adapter / IP-Adapter FaceID
+Это один из самых популярных путей: reference image подаётся в IP-Adapter, который извлекает признаки лица и/или внешности и переносит их в генерацию. В ролике про ComfyUI прямо показано использование IP-Adapter FaceID PlusV2 для устойчивой идентичности персонажа. [youtube](https://www.youtube.com/watch?v=6IPD36RPaCw)
+
+## 2) PuLID + FLUX
+PuLID — отдельный метод для переноса идентичности лица, который в ComfyUI сочетают с FLUX и TryOff. В найденном видео автор прямо делает workflow для **consistent face and outfit**, то есть удержания и лица, и одежды. [youtube](https://www.youtube.com/watch?v=BuGnOzzNb_E)
+
+## 3) TryOff для одежды
+Если у тебя задача не только на лицо, но и на **одежду**, то TryOff — специализированный подход именно для копирования деталей гардероба из референса. В том же workflow он используется вместе с PuLID, чтобы удерживать внешний вид персонажа шире, чем только лицо. [youtube](https://www.youtube.com/watch?v=BuGnOzzNb_E)
+
+## 4) LoRA, обученная на персонаже
+Это самый “тяжёлый”, но часто самый стабильный путь: сначала делают character sheet или набор изображений, потом обучают LoRA на этого персонажа. В статье RunFlow это описано как схема “character sheet → dataset → LoRA”, после чего один триггер-слово в промпте воспроизводит того же персонажа снова и снова. [runflow](https://www.runflow.io/blog/comfyui-consistent-characters-flux)
+
+## 5) ControlNet + IP-Adapter вместе
+ControlNet хорошо держит позу, композицию и контуры, а IP-Adapter помогает сохранять саму идентичность персонажа. В статье myByways это подано именно как рабочая схема для SDXL: ControlNet даёт структуру, а IP-Adapter FaceID добавляет устойчивость лица. [mybyways](https://mybyways.com/blog/consistent-portraits-using-ip-adapters-for-sdxl)
+
+## 6) Face detailer / face fix после генерации
+Это не отдельный генератор персонажа, а способ “дотянуть” лицо после основной генерации. В обсуждениях и туториалах по ComfyUI часто советуют связку основного рендера + Face Detailer, чтобы лицо не расплывалось и сохраняло узнаваемость в серии кадров. [reddit](https://www.reddit.com/r/comfyui/comments/1cnbtez/i_need_recommendations_for_creating_consistent/)
+
+## 7) Reference image / Reference Only latent
+Ещё один практический путь — использовать reference-only latent или похожий режим, где одна из прошлых картинок персонажа влияет на новую генерацию. В найденном обсуждении прямо советуют использовать Reference Only для стабильной одежды и деталей, а также комбинировать это с IP-Adapter. [reddit](https://www.reddit.com/r/comfyui/comments/1cnbtez/i_need_recommendations_for_creating_consistent/)
+
+## 8) Face swap / Reactor
+Если нужен максимально жёсткий контроль над лицом, используют face swap-подходы, например Reactor с InsightFace. Это менее “чистая” генеративная идентичность, но для закрепления одного и того же лица в серии изображений работает очень надёжно. [youtube](https://www.youtube.com/watch?v=A30pYCWEQxA)
+
+## Что выбрать
+Если тебе важна **серия рисунков с одинаковыми лицом и одеждой**, я бы ранжировал так:  
+1. LoRA на персонажа — если готов делать датасет и обучать. [lilys](https://lilys.ai/en/notes/consistent-characters-20251101/consistent-characters-from-image-comfyui-tutorial)
+2. PuLID + TryOff — если нужно быстро и именно под FLUX. [youtube](https://www.youtube.com/watch?v=BuGnOzzNb_E)
+3. IP-Adapter FaceID + ControlNet — если хочешь универсальный и часто повторяемый workflow без долгого обучения. [youtube](https://www.youtube.com/watch?v=WnIufRnSoxk)
+4. Face swap / Reactor — если приоритетом является жёсткая фиксация лица в уже готовых кадрах. [youtube](https://www.youtube.com/watch?v=KvSmwsriY5Q)
+
+Если нужно, я могу следующим сообщением собрать это в **практическую таблицу: “метод → что держит → сложность → под SDXL/FLUX → что ставить в ComfyUI”**.

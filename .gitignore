@@ -11,8 +11,16 @@ sessions/**/*.png
 sessions/**/*.jpg
 sessions/**/*.jpeg
 sessions/**/*.webp
+# Отобранные финалы и лог-файлы — коммитим:
+!**/_selected/**
+!**/log.json
 # HTML-страницы сравнения оставляем в репо (они лёгкие):
-!sessions/*.html
+!sessions/**/*.html
+
+# === Эксперименты ===
+experiments/**/*.png
+experiments/**/*.jpg
+!experiments/**/CONCLUSION.md
 
 # === Python ===
 __pycache__/

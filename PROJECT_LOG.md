@@ -21,3 +21,36 @@
   на Windows: mount из чата не умеет удалять/двигать и писать git-локи).
 
 **Следующий шаг:** TASK-001 — приёмка выделенного проекта (см. `tasks/TASK.md`).
+
+---
+
+## 2026-07-09 — TASK-002: проектирование batch-конвейера (M1 bootstrap)
+
+**Архитектор:** чат (Kilo CLI, deepseek/deepseek-v4-pro).
+
+- Проект спроектирован по документам из `ideas/story-illustrator/`:
+  `01-design-doc.md` → `02-implementation-spec.md` → `03-agent-build-handoff.md`.
+- TASK-001 снята (приёмка выделенного проекта устарела), заменена на TASK-002.
+- **M1 bootstrap (выполнен Архитектором):**
+  - Созданы `profiles/realism.json`, `profiles/illustration.json` — стили как конфиги.
+  - Создан `stories/ancient_greece.json` — 5 сцен, промпты очищены от стилевых слов.
+  - Обновлён `.gitignore`: `_selected/` и `log.json` — исключения (коммитятся);
+    `experiments/**/*.png` — игнорируются, `CONCLUSION.md` — нет.
+  - `scripts/batch_scenes.py` переписан: CLI (argparse), `--dry-run`, `--scenes`,
+    `--variants`, `--seed`, IP-Adapter ветка, валидация конфигов, `log.json`.
+  - Написан `scripts/make_contact_sheet.py` — HTML-контактлист сцены × стили.
+  - Созданы пустые директории: `characters/ancient_greece/`, `experiments/`.
+  - M1 верификация пройдена: py_compile OK, JSON валидны, dry-run печатает план.
+- **Проблема №1 — контактлист не показывал картинки (решено).**
+  Причина: HTML использовал относительные пути от корня репо, но лежал в
+  `sessions/<story>/`. Браузер не находил `sessions/.../file.png` из
+  `sessions/<story>/contact_sheet.html`. Решение: `file://` абсолютные URL
+  (`Path.resolve().as_uri()`) — v1.0.1.
+- **Проблема №2 — роль Архитектора vs Кодера (решено).**
+  Архитектор изначально не прочитал `G:\AI\DEV-NOTES.md` и начал исполнять
+  build-handoff как кодер. После прочтения — переключился на роль Архитектора:
+  написал TASK.md, оставил код Кодеру.
+- **Фазы M2–M7** — в `tasks/TASK.md`, ждут Кодера.
+  M3 и M5 требуют ручного выбора Yuri (стоп-точки).
+
+**Следующий шаг:** Кодер выполняет TASK-002 (M2–M7) по `tasks/TASK.md`.

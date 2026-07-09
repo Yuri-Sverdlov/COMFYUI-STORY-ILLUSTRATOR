@@ -1,0 +1,126 @@
+[
+  {
+    "story": "ancient_greece",
+    "title": "In Ancient Greece the midday is hot",
+    "profile": "realism",
+    "scene_id": "04_tornado_chimera",
+    "main_character": "ares",
+    "variant": 0,
+    "seed": 100,
+    "checkpoint": "realismIllustriousBy_v50FP16.safetensors",
+    "loras": [
+      {
+        "file": "cinematic_photography_detailed_illu_xl_v5.safetensors",
+        "strength": 0.8
+      }
+    ],
+    "params": {
+      "steps": 25,
+      "cfg": 7.0,
+      "sampler": "euler",
+      "scheduler": "normal",
+      "width": 1216,
+      "height": 832
+    },
+    "ipadapter_weight": 0.85,
+    "ipadapter_model": "ip-adapter-plus_sdxl_vit-h.safetensors",
+    "reference_image": "G:\\AI\\_MY_PROGRAMMING_2\\COMFYUI-STORY-ILLUSTRATOR\\characters\\ancient_greece\\ares.png",
+    "prompt": "cinematic photo, photorealistic, hyperrealistic, 8K cinematic photography, masterpiece, best quality, muscular ancient Greek Spartan warrior, 35 years old, short black curly hair, bronze helmet pushed back, weathered determined face, battle scar on left cheek, intense fierce eyes, red wool cloak, ancient Greek olive grove hit by massive blue tornado funnel descending from black storm clouds. Left side: a muscular Spartan warrior with bronze helmet, red cloak, charges toward tornado with sword drawn, red cloak billowing. Center: a plump wealthy Greek man with laurel wreath, white cloak, clings to olive tree trunk in terror. Right side: a skinny bald Athenian philosopher in faded beige cloak sits calmly at overturned table, clutching wine jug with blissful expression. Broken branches, flying dust, dramatic storm lighting, detailed skin texture, dramatic natural lighting, sharp focus, professional photography",
+    "negative": "illustration, cartoon, anime, painting, drawing, 3D render, plastic skin, blurry, low quality, watermark, text, ugly, deformed, bad anatomy, extra limbs, fused fingers, disfigured, b&w, nsfw, nude, naked, NOT a portrait, NOT close-up, NOT face-focused",
+    "timestamp": "2026-07-09T20:22:41",
+    "runner_version": "2.0.0"
+  },
+  {
+    "story": "ancient_greece",
+    "title": "In Ancient Greece the midday is hot",
+    "profile": "realism",
+    "scene_id": "04_tornado_chimera",
+    "main_character": "ares",
+    "variant": 1,
+    "seed": 101,
+    "checkpoint": "realismIllustriousBy_v50FP16.safetensors",
+    "loras": [
+      {
+        "file": "cinematic_photography_detailed_illu_xl_v5.safetensors",
+        "strength": 0.8
+      }
+    ],
+    "params": {
+      "steps": 25,
+      "cfg": 7.0,
+      "sampler": "euler",
+      "scheduler": "normal",
+      "width": 1216,
+      "height": 832
+    },
+    "ipadapter_weight": 0.85,
+    "ipadapter_model": "ip-adapter-plus_sdxl_vit-h.safetensors",
+    "reference_image": "G:\\AI\\_MY_PROGRAMMING_2\\COMFYUI-STORY-ILLUSTRATOR\\characters\\ancient_greece\\ares.png",
+    "prompt": "cinematic photo, photorealistic, hyperrealistic, 8K cinematic photography, masterpiece, best quality, muscular ancient Greek Spartan warrior, 35 years old, short black curly hair, bronze helmet pushed back, weathered determined face, battle scar on left cheek, intense fierce eyes, red wool cloak, ancient Greek olive grove hit by massive blue tornado funnel descending from black storm clouds. Left side: a muscular Spartan warrior with bronze helmet, red cloak, charges toward tornado with sword drawn, red cloak billowing. Center: a plump wealthy Greek man with laurel wreath, white cloak, clings to olive tree trunk in terror. Right side: a skinny bald Athenian philosopher in faded beige cloak sits calmly at overturned table, clutching wine jug with blissful expression. Broken branches, flying dust, dramatic storm lighting, detailed skin texture, dramatic natural lighting, sharp focus, professional photography",
+    "negative": "illustration, cartoon, anime, painting, drawing, 3D render, plastic skin, blurry, low quality, watermark, text, ugly, deformed, bad anatomy, extra limbs, fused fingers, disfigured, b&w, nsfw, nude, naked, NOT a portrait, NOT close-up, NOT face-focused",
+    "timestamp": "2026-07-09T20:23:00",
+    "runner_version": "2.0.0"
+  },
+  {
+    "story": "ancient_greece",
+    "title": "In Ancient Greece the midday is hot",
+    "profile": "realism",
+    "scene_id": "04_tornado_chimera",
+    "main_character": "ares",
+    "variant": 2,
+    "seed": 102,
+    "checkpoint": "realismIllustriousBy_v50FP16.safetensors",
+    "loras": [
+      {
+        "file": "cinematic_photography_detailed_illu_xl_v5.safetensors",
+        "strength": 0.8
+      }
+    ],
+    "params": {
+      "steps": 25,
+      "cfg": 7.0,
+      "sampler": "euler",
+      "scheduler": "normal",
+      "width": 1216,
+      "height": 832
+    },
+    "ipadapter_weight": 0.85,
+    "ipadapter_model": "ip-adapter-plus_sdxl_vit-h.safetensors",
+    "reference_image": "G:\\AI\\_MY_PROGRAMMING_2\\COMFYUI-STORY-ILLUSTRATOR\\characters\\ancient_greece\\ares.png",
+    "prompt": "cinematic photo, photorealistic, hyperrealistic, 8K cinematic photography, masterpiece, best quality, muscular ancient Greek Spartan warrior, 35 years old, short black curly hair, bronze helmet pushed back, weathered determined face, battle scar on left cheek, intense fierce eyes, red wool cloak, ancient Greek olive grove hit by massive blue tornado funnel descending from black storm clouds. Left side: a muscular Spartan warrior with bronze helmet, red cloak, charges toward tornado with sword drawn, red cloak billowing. Center: a plump wealthy Greek man with laurel wreath, white cloak, clings to olive tree trunk in terror. Right side: a skinny bald Athenian philosopher in faded beige cloak sits calmly at overturned table, clutching wine jug with blissful expression. Broken branches, flying dust, dramatic storm lighting, detailed skin texture, dramatic natural lighting, sharp focus, professional photography",
+    "negative": "illustration, cartoon, anime, painting, drawing, 3D render, plastic skin, blurry, low quality, watermark, text, ugly, deformed, bad anatomy, extra limbs, fused fingers, disfigured, b&w, nsfw, nude, naked, NOT a portrait, NOT close-up, NOT face-focused",
+    "timestamp": "2026-07-09T20:23:18",
+    "runner_version": "2.0.0"
+  },
+  {
+    "story": "ancient_greece",
+    "title": "In Ancient Greece the midday is hot",
+    "profile": "realism",
+    "scene_id": "04_tornado_chimera",
+    "main_character": "ares",
+    "variant": 3,
+    "seed": 103,
+    "checkpoint": "realismIllustriousBy_v50FP16.safetensors",
+    "loras": [
+      {
+        "file": "cinematic_photography_detailed_illu_xl_v5.safetensors",
+        "strength": 0.8
+      }
+    ],
+    "params": {
+      "steps": 25,
+      "cfg": 7.0,
+      "sampler": "euler",
+      "scheduler": "normal",
+      "width": 1216,
+      "height": 832
+    },
+    "ipadapter_weight": 0.85,
+    "ipadapter_model": "ip-adapter-plus_sdxl_vit-h.safetensors",
+    "reference_image": "G:\\AI\\_MY_PROGRAMMING_2\\COMFYUI-STORY-ILLUSTRATOR\\characters\\ancient_greece\\ares.png",
+    "prompt": "cinematic photo, photorealistic, hyperrealistic, 8K cinematic photography, masterpiece, best quality, muscular ancient Greek Spartan warrior, 35 years old, short black curly hair, bronze helmet pushed back, weathered determined face, battle scar on left cheek, intense fierce eyes, red wool cloak, ancient Greek olive grove hit by massive blue tornado funnel descending from black storm clouds. Left side: a muscular Spartan warrior with bronze helmet, red cloak, charges toward tornado with sword drawn, red cloak billowing. Center: a plump wealthy Greek man with laurel wreath, white cloak, clings to olive tree trunk in terror. Right side: a skinny bald Athenian philosopher in faded beige cloak sits calmly at overturned table, clutching wine jug with blissful expression. Broken branches, flying dust, dramatic storm lighting, detailed skin texture, dramatic natural lighting, sharp focus, professional photography",
+    "negative": "illustration, cartoon, anime, painting, drawing, 3D render, plastic skin, blurry, low quality, watermark, text, ugly, deformed, bad anatomy, extra limbs, fused fingers, disfigured, b&w, nsfw, nude, naked, NOT a portrait, NOT close-up, NOT face-focused",
+    "timestamp": "2026-07-09T20:23:36",
+    "runner_version": "2.0.0"
+  }
+]

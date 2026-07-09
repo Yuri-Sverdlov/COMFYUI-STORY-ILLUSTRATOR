@@ -1,0 +1,46 @@
+{
+  "story": "ancient_greece",
+  "title": "In Ancient Greece the midday is hot",
+  "characters": {
+    "ares": "muscular ancient Greek Spartan warrior, 35 years old, short black curly hair, bronze helmet pushed back, weathered determined face, battle scar on left cheek, intense fierce eyes, red wool cloak",
+    "aristocles": "skinny bald ancient Greek Athenian philosopher, 50 years old, thin face, prominent cheekbones, sun-spotted shiny bald head, shrewd ironic squinting eyes, faint sly smile, worn faded beige cloak",
+    "ploutos": "plump wealthy ancient Greek man, 45 years old, round cheerful face, rosy cheeks, double chin, balding with laurel wreath, amused twinkling eyes, pristine white wool cloak, gold fibula brooch"
+  },
+  "scenes": [
+    {
+      "id": "01_hot_midday",
+      "main_character": "ares",
+      "prompt": "hot Mediterranean midday in ancient Greek olive grove. Two men at a wooden table. First man is a muscular Spartan warrior, short black curly hair, bronze helmet pushed back, weathered determined face, battle scar on left cheek, intense fierce eyes, red wool cloak, sits gesturing impatiently. Second man is a skinny bald Athenian philosopher, thin face, prominent cheekbones, sun-spotted shiny bald head, shrewd ironic squinting eyes, faint sly smile, worn faded beige cloak, sits across crumbling goat cheese, sweating under sun. Clay wine jugs, olives, bread on table. Golden dusty sunlight filtering through olive leaves, cicada-hum atmosphere",
+      "negative_extra": "NOT a portrait, NOT close-up, NOT face-focused",
+      "variants": 4
+    },
+    {
+      "id": "02_ploutos_arrives",
+      "main_character": "ploutos",
+      "prompt": "ancient Greek olive grove. A plump wealthy Greek man, round cheerful face, rosy cheeks, double chin, balding with laurel wreath, amused twinkling eyes, pristine white wool cloak, gold fibula brooch, arrives at a wooden table, followed by a slave carrying clay amphorae. A muscular Spartan warrior with bronze helmet, red cloak, looks up with interest. A skinny bald Athenian philosopher in faded beige cloak already reaching for wine jug. Dusty path visible behind, warm afternoon light",
+      "negative_extra": "NOT a portrait, NOT close-up, NOT face-focused",
+      "variants": 4
+    },
+    {
+      "id": "03_chimera_gossip",
+      "main_character": "ares",
+      "prompt": "three ancient Greek men at wooden table under olive trees, deep in conversation. A plump wealthy Greek man with laurel wreath, white cloak, gestures dramatically telling a story. A muscular Spartan warrior with bronze helmet, red cloak, battle scar on left cheek, grips his sword, looking alarmed. A skinny bald Athenian philosopher in faded beige cloak skeptically sips wine from clay cup. Scattered olives, bread, amphorae on table. Dusty warm Mediterranean light",
+      "negative_extra": "NOT a portrait, NOT close-up, NOT face-focused",
+      "variants": 4
+    },
+    {
+      "id": "04_tornado_chimera",
+      "main_character": "ares",
+      "prompt": "ancient Greek olive grove hit by massive blue tornado funnel descending from black storm clouds. Left side: a muscular Spartan warrior with bronze helmet, red cloak, charges toward tornado with sword drawn, red cloak billowing. Center: a plump wealthy Greek man with laurel wreath, white cloak, clings to olive tree trunk in terror. Right side: a skinny bald Athenian philosopher in faded beige cloak sits calmly at overturned table, clutching wine jug with blissful expression. Broken branches, flying dust, dramatic storm lighting",
+      "negative_extra": "NOT a portrait, NOT close-up, NOT face-focused",
+      "variants": 4
+    },
+    {
+      "id": "05_aftermath",
+      "main_character": "ares",
+      "prompt": "aftermath of devastating storm in ancient Greek olive grove. Left side: a muscular Spartan warrior stands wounded, face bloodied, red cloak torn, bronze helmet missing, but still gripping short sword heroically. Center: a skinny bald Athenian philosopher in torn faded beige cloak sits amid wreckage, hugging intact wine jug with blissful smile. Right side: a plump wealthy Greek man stands nearby bewildered, white cloak completely gone, both hands on his belt checking. Broken olive branches everywhere, scattered debris, warm post-storm light",
+      "negative_extra": "NOT a portrait, NOT close-up, NOT face-focused",
+      "variants": 4
+    }
+  ]
+}
