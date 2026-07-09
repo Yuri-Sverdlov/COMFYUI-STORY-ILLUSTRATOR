@@ -1,0 +1,28 @@
+# === Секреты — НИКОГДА не коммитим ===
+.env
+*.env
+*.key
+*_key
+*.pem
+secrets.*
+
+# === Тяжёлые результаты генераций (галереи изображений) ===
+sessions/**/*.png
+sessions/**/*.jpg
+sessions/**/*.jpeg
+sessions/**/*.webp
+# HTML-страницы сравнения оставляем в репо (они лёгкие):
+!sessions/*.html
+
+# === Python ===
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# === ОС / редакторы ===
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
