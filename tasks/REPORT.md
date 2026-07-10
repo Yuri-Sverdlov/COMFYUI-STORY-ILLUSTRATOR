@@ -2,28 +2,59 @@
 
 > «Правда о состоянии»: что сейчас. Заполняет кодер после выполнения TASK.md.
 
-## TASK-002: Commit + push bootstrap M1 на GitHub
+## TASK-002: Batch-конвейер ComfyUI (M1–M7) — ОСТАНОВЛЕН
 
-**Статус:** ⬜ не начато
+**Статус:** ❌ остановлен — пивот на облако (2026-07-09)
 
-**Контекст:** Архитектор выполнил bootstrap M1 — созданы profiles/, stories/,
-.gitignore, batch_scenes.py (CLI), make_contact_sheet.py. Нужно закоммитить
-и запушить на GitHub.
+**Причина остановки:** M5 (полный прогон Греции) дал брак — все 40 изображений
+оказались погрудными портретами одного человека вместо сцен. IP-Adapter
+(weight 0.85, preset PLUS) переносит с референса не только лицо, но и
+кадрирование; негативы «NOT a portrait» CLIP не понимает. Конфликт
+«консистенция персонажа vs композиция сцены» — фундаментальная слабость
+локального SDXL-пайплайна.
 
-**Что сделано (Архитектор):**
-- M1 bootstrap: profiles/realism.json, profiles/illustration.json,
-  stories/ancient_greece.json, .gitignore, scripts/batch_scenes.py (v2.0.0),
-  scripts/make_contact_sheet.py (v1.0.1), characters/ancient_greece/,
-  experiments/, tasks/TASK.md, tasks/REPORT.md, CONTEXT.md, PROJECT_LOG.md,
-  KNOWLEDGE_BASE.md
-- py_compile OK, JSON валидны, dry-run работает
+**Решение Yuri (09.07.2026):** переход на облачную генерацию через
+OpenRouter Image API (google/gemini-3-pro-image). ComfyUI-пайплайн
+НЕ удаляется — остаётся для NSFW и локальных экспериментов.
 
-**Что сделать (Кодер):**
-- [ ] `git status` — проверить состояние
-- [ ] `git add -A` + commit
-- [ ] `git push origin main`
-- [ ] `git log --oneline -1` + `git ls-remote origin refs/heads/main` — сверить
+**Что сделано (M1–M4):**
+- M1: bootstrap (profiles, stories, .gitignore, batch_scenes.py CLI, make_contact_sheet.py)
+- M2: тестовый прогон 1 сцены × 2 профиля (png + log.json + контактлист)
+- M3: референсы персонажей (characters/ancient_greece/{ares,aristocles,ploutos}.png)
+- M4: EXP-1 калибровка IP-Adapter (experiments/2026-07-09_ipadapter_weight/)
 
-**Проблемы / открытые вопросы:**
-- Уточнить remote: `git remote -v`
-- Полный план фаз M2–M7 — в `tasks/done/TASK-002_full.md` (на следующую сессию)
+**Отменено:**
+- M5: полный прогон Греции — признан браком
+- M6: тест на новизну — отменён
+- M7: миграция и документация — не актуально
+
+**Следующая задача:** TASK-003 — генерация через OpenRouter Image API
+(см. `tasks/TASK.md`).
+
+---
+
+## TASK-003: Генерация иллюстраций через OpenRouter Image API
+
+**Статус:** ✅ Шаг 1 выполнен (2026-07-10)
+
+**Шаг 1 — Этюд (проверка гипотезы):**
+- [x] `scripts/cloud_etude.py` написан
+- [x] POST на OpenRouter с 2 референсами (base64) + промпт сцены 01_hot_midday
+- [x] Результат → `sessions/ancient_greece_cloud/etude/`
+- [x] `log.json` с полным ответом API (usage/cost)
+- [ ] На картинке ДВА человека за столом, лица узнаваемы, видна роща
+- [ ] СТОП: показать Yuri
+
+**Результаты:**
+- Модель: `google/gemini-3-pro-image-20260528`
+- Размер: 1024x1024 PNG, 1.8MB
+- Стоимость: $0.140326 (~14 центов)
+- Референсы: ares.png + aristocles.png (base64, встроены)
+- Время генерации: 36 секунд
+
+**Проблемы:**
+- Кодер не может визуально проверить картинку — нужен глаз Yuri.
+- Изображение сохранено в `sessions/ancient_greece_cloud/etude/v00.png`.
+- cost чуть выше ожидаемого ($0.03–0.06) — $0.14 из-за reasoning_tokens (287) + image_tokens (1120). Возможно, стоит убрать часть verbal reasoning через параметр `reasoning_effort: "none"` если модель поддерживает.
+
+**СТОП: требуется одобрение Yuri.**
